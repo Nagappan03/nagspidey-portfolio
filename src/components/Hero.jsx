@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowDown, Mail } from 'lucide-react'
+import { ArrowDown, Download, Mail } from 'lucide-react'
 import { profile } from '../data'
 import { GithubIcon, LinkedinIcon } from './BrandIcons'
 
@@ -51,6 +51,14 @@ export default function Hero() {
         className="mt-9 flex flex-wrap items-center justify-center gap-4"
       >
         <a
+          href={profile.resumeUrl}
+          download
+          className="inline-flex items-center gap-2 rounded-sm border-2 border-spidey-blue bg-spidey-blue px-7 py-3 font-mono text-sm font-semibold uppercase tracking-wide text-white shadow-[4px_4px_0_0_#c8102e] transition-transform hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#c8102e]"
+        >
+          <Download size={16} />
+          Download CV
+        </a>
+        <a
           href="#projects"
           className="rounded-sm border-2 border-spidey-red bg-spidey-red px-7 py-3 font-mono text-sm font-semibold uppercase tracking-wide text-white shadow-[4px_4px_0_0_#0d1f52] transition-transform hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#0d1f52]"
         >
@@ -88,7 +96,7 @@ export default function Hero() {
   )
 }
 
-function SpideySymbol({ className }: { className?: string }) {
+function SpideySymbol({ className }) {
   return (
     <svg viewBox="0 0 100 100" fill="currentColor" className={className}>
       <path d="M50 4c3 8 3 16 0 24 6-6 13-10 22-11-5 7-8 14-9 22 8-3 16-3 24 0-7 5-12 11-15 19 8 0 15 3 21 8-8 2-15 6-20 12 7 3 13 8 17 15-8-1-16 0-23 4 4 7 6 15 6 23-6-5-13-9-21-11 1 8-1 16-5 23-4-7-6-15-5-23-8 2-15 6-21 11 0-8 2-16 6-23-7-4-15-5-23-4 4-7 10-12 17-15-5-6-12-10-20-12 6-5 13-8 21-8-3-8-8-14-15-19 8-3 16-3 24 0-1-8-4-15-9-22 9 1 16 5 22 11-3-8-3-16 0-24z" />

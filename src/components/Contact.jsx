@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Download, Mail, MapPin, Phone } from 'lucide-react'
 import { profile } from '../data'
 import { GithubIcon, LinkedinIcon } from './BrandIcons'
 import SectionHeading from './SectionHeading'
@@ -25,13 +25,21 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="mt-10"
+        className="mt-10 flex flex-wrap items-center justify-center gap-4"
       >
         <a
           href={`mailto:${profile.email}`}
           className="inline-block rounded-sm border-2 border-spidey-red bg-spidey-red px-8 py-4 font-mono text-sm font-semibold uppercase tracking-wide text-white shadow-[4px_4px_0_0_#0d1f52] transition-transform hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#0d1f52]"
         >
           {profile.email}
+        </a>
+        <a
+          href={profile.resumeUrl}
+          download
+          className="inline-flex items-center gap-2 rounded-sm border-2 border-spidey-blue px-8 py-4 font-mono text-sm font-semibold uppercase tracking-wide text-spidey-blue transition-colors hover:bg-spidey-blue hover:text-white"
+        >
+          <Download size={16} />
+          Download CV
         </a>
       </motion.div>
 

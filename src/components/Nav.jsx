@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import { Download } from 'lucide-react'
+import { profile } from '../data'
 
 const LINKS = [
   { href: '#about', label: 'About' },
@@ -28,7 +30,7 @@ export default function Nav() {
         <a href="#top" className="font-display text-2xl text-spidey-red tracking-wider">
           NAGSPIDEY<span className="text-spidey-blue">.</span>
         </a>
-        <ul className="hidden gap-8 md:flex">
+        <ul className="hidden items-center gap-8 md:flex">
           {LINKS.map((l) => (
             <li key={l.href}>
               <a
@@ -39,6 +41,16 @@ export default function Nav() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href={profile.resumeUrl}
+              download
+              className="flex items-center gap-1.5 rounded-sm border border-spidey-red/50 px-3 py-1.5 font-mono text-sm uppercase tracking-wide text-spidey-red transition-colors hover:bg-spidey-red hover:text-white"
+            >
+              <Download size={14} />
+              Resume
+            </a>
+          </li>
         </ul>
         <button
           onClick={() => setOpen((v) => !v)}
@@ -63,6 +75,16 @@ export default function Nav() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href={profile.resumeUrl}
+              download
+              onClick={() => setOpen(false)}
+              className="block py-2 font-mono text-sm uppercase tracking-wide text-spidey-red"
+            >
+              Download Resume
+            </a>
+          </li>
         </ul>
       )}
     </header>
