@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Download, Mail, MapPin, Phone } from 'lucide-react'
+import { Download, Mail, MapPin, Phone, Rss } from 'lucide-react'
 import { profile } from '../data'
 import { GithubIcon, LinkedinIcon } from './BrandIcons'
 import SectionHeading from './SectionHeading'
@@ -58,6 +58,9 @@ export default function Contact() {
         </a>
         <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-spidey-red">
           <LinkedinIcon size={22} />
+        </a>
+        <a href={profile.blog} target="_blank" rel="noreferrer" aria-label="Blog" className="hover:text-spidey-red">
+          <Rss size={22} />
         </a>
         <a href={`mailto:${profile.email}`} aria-label="Email" className="hover:text-spidey-red">
           <Mail size={22} />

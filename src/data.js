@@ -8,6 +8,7 @@ export const profile = {
   site: 'https://nagspidey.co.in',
   linkedin: 'https://linkedin.com/in/nagappan-s-286b035b',
   github: 'https://github.com/Nagappan03',
+  blog: 'https://nagspidey.hashnode.dev',
   resumeUrl: '/Nagappan_S_Resume.pdf',
   summary:
     "Seasoned Full Stack Engineer with 9+ years of experience building scalable web applications across fintech, insurance, and enterprise domains. Proficient in React, Node.js, Next.js, and cloud technologies, with a strong track record of leading teams and delivering complex migrations end to end. Recently expanded into AI Engineering — building RAG pipelines, agentic workflows, and LLM-powered applications using Anthropic Claude, LangChain, and pgvector. Actively seeking senior engineering roles where I can bridge full stack expertise with modern AI capabilities to deliver intelligent, high-impact products.",

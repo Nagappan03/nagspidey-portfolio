@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowDown, Download, Mail } from 'lucide-react'
+import { ArrowDown, Download, Mail, Rss } from 'lucide-react'
 import { profile } from '../data'
 import { GithubIcon, LinkedinIcon } from './BrandIcons'
 
@@ -83,6 +83,9 @@ export default function Hero() {
         </a>
         <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-spidey-red">
           <LinkedinIcon size={22} />
+        </a>
+        <a href={profile.blog} target="_blank" rel="noreferrer" aria-label="Blog" className="hover:text-spidey-red">
+          <Rss size={22} />
         </a>
         <a href={`mailto:${profile.email}`} aria-label="Email" className="hover:text-spidey-red">
           <Mail size={22} />

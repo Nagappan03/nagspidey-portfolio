@@ -8,6 +8,7 @@ const LINKS = [
   { href: '#projects', label: 'Projects' },
   { href: '#skills', label: 'Skills' },
   { href: '#contact', label: 'Contact' },
+  { href: profile.blog, label: 'Blog', external: true },
 ]
 
 export default function Nav() {
@@ -35,6 +36,8 @@ export default function Nav() {
             <li key={l.href}>
               <a
                 href={l.href}
+                target={l.external ? '_blank' : undefined}
+                rel={l.external ? 'noreferrer' : undefined}
                 className="font-mono text-sm uppercase tracking-wide text-neutral-300 transition-colors hover:text-spidey-red"
               >
                 {l.label}
@@ -68,6 +71,8 @@ export default function Nav() {
             <li key={l.href}>
               <a
                 href={l.href}
+                target={l.external ? '_blank' : undefined}
+                rel={l.external ? 'noreferrer' : undefined}
                 onClick={() => setOpen(false)}
                 className="block py-2 font-mono text-sm uppercase tracking-wide text-neutral-300 hover:text-spidey-red"
               >
