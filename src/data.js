@@ -117,11 +117,11 @@ export const projects = [
     stack: ['LangGraph', 'Multi-Agent Orchestration', 'State Management'],
   },
   {
-    name: 'AI Job Application Copilot',
-    tag: 'LLM Chaining',
+    name: 'Content Research & Fact-Check Agent',
+    tag: 'Agentic AI',
     description:
-      'LLM-powered tool that takes a job description and resume as inputs and generates tailored resume bullet points, a custom cover letter, and role-specific interview prep questions.',
-    stack: ['Multi-step LLM Chaining', 'Prompt Engineering'],
+      'Single-agent, tool-using research pipeline that fact-checks a topic before it becomes a blog post. Runs unattended on GitHub Actions with cron scheduling, cost tracking, and self-monitoring — every source is verified against live web search, not recalled from the model.',
+    stack: ['Claude API', 'Agentic Tool Use', 'GitHub Actions (CI/CD)', 'Node.js'],
   },
 ]
 
