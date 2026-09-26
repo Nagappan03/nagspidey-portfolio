@@ -127,7 +127,7 @@ export const projects = [
 
 export const clientProjects = [
   {
-    name: 'Synchrony eCarts – Shopify',
+    name: 'Synchrony eCarts – Shopify & BigCommerce',
     period: 'Jan 2025 – Present',
     points: [
       'Designed and implemented an iFrame-based Common UI for consistent configuration management across both Marketing & Payment UI apps.',
