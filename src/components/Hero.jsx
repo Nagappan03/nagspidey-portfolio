@@ -2,10 +2,12 @@ import { motion } from 'framer-motion'
 import { ArrowDown, Download, Mail, Rss } from 'lucide-react'
 import { profile } from '../data'
 import { GithubIcon, LinkedinIcon } from './BrandIcons'
+import MeCutout from './MeCutout'
 
 export default function Hero() {
   return (
-    <section id="top" className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-20 text-center">
+    <section id="top" className="relative flex min-h-screen overflow-x-clip flex-col items-center justify-center px-6 pt-20 text-center">
+      <MeCutout />
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

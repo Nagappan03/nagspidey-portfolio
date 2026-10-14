@@ -85,3 +85,12 @@ body {
 .animate-pulse-glow {
   animation: pulse-glow 2.4s ease-in-out infinite;
 }
+
+@keyframes bubble-pop {
+  0%, 100% { transform: scale(1) translateY(0); }
+  50% { transform: scale(1.08) translateY(-3px); }
+}
+.hi-bubble {
+  animation: bubble-pop 1.6s ease-in-out infinite;
+  transform-origin: bottom center;
+}
