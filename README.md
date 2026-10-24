@@ -25,3 +25,10 @@ Deployed on Railway.
 ## Updating the CV
 
 Replace `public/Nagappan_S_Resume.pdf` with the new file (keep the same filename) and redeploy — the "Download CV" links throughout the site point at this path.
+
+## Hone AI pages
+
+`public/hone/` holds the static pages for the Hone AI app, served at `/hone`, `/hone/privacy`,
+`/hone/terms` and `/hone/delete-account`. Edit the HTML there (the source copy lives in the
+hone-ai repo under `web/hone/`). The start script no longer uses `serve -s`, because the single-page
+fallback would send these addresses to the portfolio home page.
