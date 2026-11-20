@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowDown, Download, Mail, Rss } from 'lucide-react'
+import { ArrowDown, ArrowRight, Download, Mail, Rss } from 'lucide-react'
 import { profile } from '../data'
 import { GithubIcon, LinkedinIcon } from './BrandIcons'
 import MeCutout from './MeCutout'
@@ -46,11 +46,23 @@ export default function Hero() {
         <span className="text-spidey-red font-semibold">AI-powered</span> systems.
       </motion.p>
 
+      <motion.a
+        href="#stropdeck"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.55, duration: 0.7 }}
+        className="mt-7 inline-flex items-center gap-2 rounded-full border border-spidey-red/50 bg-spidey-red/10 px-4 py-1.5 font-mono text-xs uppercase tracking-wide text-neutral-200 transition-colors hover:border-spidey-red hover:text-white"
+      >
+        <span className="rounded-full bg-spidey-red px-2 py-0.5 text-[10px] font-semibold text-white">New</span>
+        Stropdeck is live on Google Play
+        <ArrowRight size={14} />
+      </motion.a>
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.7 }}
-        className="mt-9 flex flex-wrap items-center justify-center gap-4"
+        className="mt-6 flex flex-wrap items-center justify-center gap-4"
       >
         <a
           href={profile.resumeUrl}
