@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Nav from './components/Nav'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
+import Stropdeck from './components/Stropdeck'
 import WebBackground from './components/WebBackground'
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
+        <Stropdeck />
         <About />
         <Experience />
         <Projects />

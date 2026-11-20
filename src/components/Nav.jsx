@@ -3,6 +3,7 @@ import { Download } from 'lucide-react'
 import { profile } from '../data'
 
 const LINKS = [
+  { href: '#stropdeck', label: 'App' },
   { href: '#about', label: 'About' },
   { href: '#experience', label: 'Experience' },
   { href: '#projects', label: 'Projects' },

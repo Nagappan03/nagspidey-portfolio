@@ -164,6 +164,30 @@ export const clientProjects = [
   },
 ]
 
+export const stropdeck = {
+  playUrl:
+    'https://play.google.com/store/apps/details?id=com.nagspidey.hone&referrer=utm_source%3Dportfolio%26utm_medium%3Dwebsite',
+  tagline:
+    'A free Android app that turns real AI engineering interview topics into short flashcards, quizzes and plain-words explanations.',
+  story:
+    'Built end to end in about two and a half months as a side project, from the Supabase backend and content pipeline to the Play Store release.',
+  features: [
+    'Flashcards with beginner to advanced levels',
+    'Plain-words mode for new topics',
+    'Topic quizzes and saved cards',
+    'Interactive visuals for the maths behind AI',
+    'Streaks, badges and progress synced to your account',
+    'New topics delivered without an app update',
+  ],
+  stack: ['React Native', 'Expo', 'Supabase', 'PostgreSQL', 'GitHub Actions', 'EAS'],
+  card: {
+    tag: 'Concept',
+    question: 'What is RAG?',
+    answer:
+      'Retrieval (find the relevant information) plus generation (use it to write a grounded answer).',
+  },
+}
+
 export const certifications = [
   {
     name: 'AWS Certified Developer Associate',
